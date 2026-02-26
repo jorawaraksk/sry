@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: filhalzz/try:latest
+          tags: filhalzz/try:master
